@@ -1,0 +1,136 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1f;
+  color: white;
+}
+
+header {
+  background-color: #3a3a3c;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  padding: 80px;
+  padding-top: 20px;
+}
+
+.logo-title {
+  float: left;
+}
+
+h1 {
+  float: right;
+
+}
+
+#logo {
+  height: 60px;
+  padding-bottom: 10px;
+  margin-right: 5px;
+  padding-top: 10px;
+}
+
+/* Added styles for navigation bar */
+nav {
+  float: right;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 30px;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+form, section {
+  background-color: #3a3a3c;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  line-height: 30px;
+}
+
+h2 {
+    margin-top:0
+}
+
+.form-group {
+    display:flex;
+    align-items:center
+}
+
+.form-group + .form-group {
+    margin-top:10px
+}
+
+.form-group label {
+    flex-basis:100px
+}
+
+.form-group input[type=text], .form-group input[type=date], .form-group select {
+    flex-grow:1
+}
+
+button {
+    background-color:#27C1C0; 
+    color:white;
+    border:none; 
+    padding:10px; 
+    border-radius:5px; 
+    margin: 10px;
+}
+
+form, section {
+    background-color:#6141ac; 
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+    padding:20px;
+    margin-bottom:40px; 
+}
+
+.form-group input[type=text], .form-group input[type=date], .form-group select {
+  background-color: #1d1d1f; 
+  color: white; 
+  border: none; 
+  padding: 5px; 
+  
+}
+
+.form-group select {
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
+  padding: 5px; 
+  border-radius: 5px; 
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #3a3a3c;
+  border-radius: 15px;
+  /* add additional styles as desired */
+}
+
+.edit-task-form{
+  background-color: #2d1674;
+}
