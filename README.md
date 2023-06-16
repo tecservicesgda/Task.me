@@ -5,7 +5,7 @@ Task.me es una aplicación web de gestión de tareas que ayuda a los usuarios a 
 
 ## Cómo utilizar la aplicación
 
-1. Abre la aplicación en tu navegador web.
+1. Abre la aplicación en tu navegador web. https://taskme-9201062a0a4a.herokuapp.com
 2. Utiliza el formulario "To Do" para agregar una nueva tarea. Ingresa el nombre de la tarea, la fecha de vencimiento y la categoría.
 3. La nueva tarea aparecerá en la sección "Upcoming".
 4. Para editar una tarea existente, haz clic en el botón "Edit" junto a la tarea en la sección "Upcoming". Realiza los cambios necesarios y haz clic en el botón "Save".
