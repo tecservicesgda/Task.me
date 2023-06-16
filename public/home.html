@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task.me</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="logo-title">
+        <img src="logo.png" alt="Task.me Logo" id="logo">
+        <h1>Task.me</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#explanation-section">Home</a></li>
+          <li><a href="#how-it-works-section">How to get started?</a></li>
+          <li><a href="#add-task-form">To Do</a></li>
+          <li><a href="#tasks-section">Upcoming</a></li>
+          <li><a href="#footer">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="explanation-section">
+        <h2>Home</h2>
+        <p>Task.me is a simple and easy-to-use task management app that helps you stay organized and get things done. 
+          With Task.me, you can easily add, edit, and delete tasks, set due dates, and categorize your tasks to keep track of your personal, work, and school responsibilities.</p>
+      </form>
+      <form id="how-it-works-section">
+        <h2>How to get started?</h2>
+        <p>It's simple. Just add your new Task to be done with a Due Date and a Category in the To Do section. 
+          Your new Task can be seen, edited and deleted in the Upcoming section.
+        </p>
+      </form>
+      <form id="add-task-form">
+        <h2>To Do</h2>
+        <div class="form-group">
+          <label for="new-task">Task</label>
+          <input type="text" id="new-task">
+        </div>
+        <div class="form-group">
+          <label for="due-date">Due Date:</label>
+          <input type="date" id="due-date">
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value=""></option>
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+          </select>
+        </div>
+        <button>Add</button>
+      </form>
+      <section id="tasks-section">
+        <h2>Upcoming</h2>
+        <ul id="task-list">
+          <!-- List of tasks will go here -->
+        </ul>
+      </section>
+
+    <!-- Template for displaying tasks -->
+    <template id="task-template">
+      <li class="task-item">
+        <form class="edit-task-form" hidden>
+          <div class="form-group">
+            <label>Task</label>
+            <!-- Added name attribute to the edit-task-name input element -->
+            <input type="text" class="edit-task-name" name="edit-task-name">
+          </div>
+          <div class="form-group">
+            <label>Due Date</label>
+            <!-- Added name attribute to the edit-due-date input element -->
+            <input type="date" class="edit-due-date" name="edit-due-date">
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <!-- Added name attribute to the edit-category select element -->
+            <select class="edit-category" name="edit-category">
+              <option value=""></option>
+              <option value="Personal">Personal</option>
+              <option value="Work">Work</option>
+              <option value="School">School</option>
+            </select>
+          </div>
+          <button>Save</button>
+          <button type="button" class="cancel-button">Cancel</button>
+        </form>
+        <div class="view-task">
+          <span class="task-name"></span>
+          <span class="due-date"></span>
+          <span class="category"></span>
+          <button class="edit-button">Edit</button>
+          <button class="delete-button">Delete</button>
+        </div>
+      </li>
+    </template>
+  </main>
+
+  <footer>
+      <img src="logo.png" alt="Task.me Logo" id="logo">
+      <h2>More About</h2>
+      <p>Task management Web App for productivity. Hosted on Heroku.</p>
+      <h2>Author</h2>
+      <p>Carlos Cruz</p>
+      <p>© 2023. Task.me. All rights reserved | Design by Task.me</p>
+  </footer>
+
+
+    <script src="client.js"></script>
+  </body>
+
+</html>
