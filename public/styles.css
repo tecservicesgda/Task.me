@@ -30,7 +30,7 @@ h1 {
   padding-top: 10px;
 }
 
-/* Added styles for navigation bar */
+
 nav {
   float: right;
   margin: 0;
@@ -128,7 +128,7 @@ footer {
   padding-top: 20px;
   background-color: #3a3a3c;
   border-radius: 15px;
-  /* add additional styles as desired */
+
 }
 
 .edit-task-form{
